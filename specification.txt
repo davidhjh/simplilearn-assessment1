@@ -10,5 +10,14 @@ Week 2 - Complete add and delete functions
 Week 3 - Complete final search function
 Along each week, also debug and clean up code.
 
-Data structer used: ArrayList<String>
+Data structure used: ArrayList<String>
 Sorting algorithm used: merge sort, at O(n log(n)) efficiency.
+
+Additional tools utilized:
+- Eclipse IDE
+- Java programming language
+- Git and GitHub
+- Scrum methodology
+
+LINK TO GITHUB REPOSITORY:
+https://github.com/davidhjh/simplilearn-assessment1
