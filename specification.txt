@@ -1,1 +1,14 @@
-The application provided enables the user to fill in a directory with file names of the user's choosing, as well as deleting and searching for them. Additionally, the user can print out the entire directory list in ascending order alphabetically. When the user opens the application, the user is shown a welcome message and multiple options to choose from. The user can then input their choice of action in order to utilize the functions provided.
+The application provided enables the user to fill in a directory with file names of the user's choosing, 
+as well as deleting and searching for them. Additionally, the user can print out the entire directory 
+list in ascending order alphabetically. When the user opens the application, the user is shown a welcome 
+message and multiple options to choose from. The user can then input their choice of action in order to 
+utilize the functions provided. 
+
+Scrum timeline:
+Week 1 - Create welcome screen and give user options
+Week 2 - Complete add and delete functions
+Week 3 - Complete final search function
+Along each week, also debug and clean up code.
+
+Data structer used: ArrayList<String>
+Sorting algorithm used: merge sort, at O(n log(n)) efficiency.
