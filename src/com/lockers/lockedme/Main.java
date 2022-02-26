@@ -24,6 +24,7 @@ public class Main {
 						+ "3. Exit application\n\n"
 						+ "Enter your input:");
 				input = scanner.nextLine();
+				System.out.println();
 			}
 			
 			if (input.equals("3")) {
@@ -33,7 +34,7 @@ public class Main {
 				
 			} else if (input.equals("2")) {
 				// give user their options using helper function
-				userInput(directoryList);
+				userActions(directoryList);
 				
 			} else if (input.equals("1")) {
 				// print current file names in ascending order
@@ -55,7 +56,7 @@ public class Main {
 		scanner.close();
 	}
 
-	public static void userInput(ArrayList<String> directoryList) {
+	public static void userActions(ArrayList<String> directoryList) {
 		String inputChange = null;
 		String fileName = null;
 		
@@ -71,7 +72,9 @@ public class Main {
 						+ "4. Go back to previous screen\n"
 						+ "Enter your input:");
 				inputChange = scanner.nextLine();
+				System.out.println();
 			}
+			
 			if (inputChange.equals("4")) {
 				// go to previous screen
 				break;
@@ -80,6 +83,15 @@ public class Main {
 				// search for file name
 				System.out.println("Enter file name you wish to search for: ");
 				fileName = scanner.nextLine();
+				if (directoryList.contains(fileName)) {
+					// print file name from ArrayList
+					System.out.println("File \"" + fileName + "\" was found in the current directory.");
+					
+				} else {
+					// file not found
+					System.out.println("Error: file \"" + fileName + "\" not found");
+					
+				}
 				
 			} else if (inputChange.equals("2")) {
 				// delete file name
